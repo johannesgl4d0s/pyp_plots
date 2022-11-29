@@ -57,10 +57,10 @@ def get_grid_df(n,carrier):
             retro.buses.loc[f"{bus}"+ " " + carrier[:3].strip(), ["x","y"]] = retro.buses.loc[bus, ["x","y"]]
     return(normal,retro)
 
-countries = gpd.read_file(r'C:\Users\johannes.misensky\OneDrive - AGGM\Dokumente\pyp\Shapefile\shape_nuts2.shp')
+countries = gpd.read_file(r'C:Shapefile\shape_nuts2.shp')
 
 
-mypath = r"C:\Users\johannes.misensky\OneDrive - AGGM\Dokumente\pyp\2022-05-11_13-30-56\esm_run"
+mypath = r"C:pyp\2022-05-11_13-30-56\esm_run"
 mypath1 = f"{mypath}\postnetworks"
 filenames = next(walk(mypath1), (None, None, []))[2]
 
